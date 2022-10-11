@@ -1,118 +1,103 @@
 .container-main {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 0 20px;
-    text-align: center;
-    /* border: 1px solid red; */
-  }
-  
-  
- 
-  .header > h3{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.header > h3 {
+  font-size: 1.6rem;
+  color: "#080B11";
+  margin-top: 3rem;
+}
+.header > p {
+  font-size: 0.9rem;
+  margin-top: -0.7rem;
+  color: #939daf;
+}
+
+.form {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.form-group {
+  max-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+
+.form-group .label {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: "#364259";
+}
+
+.form-group input {
+  width: 92%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  outline: none;
+}
+
+.footer {
+  max-width: 320px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 6.5rem;
+}
+
+.footer .btn {
+  width: 100%;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  background-color: #674ce5;
+  color: #fff;
+}
+
+.opdata {
+  max-width: 400px;
+  margin: auto;
+
+  padding: 1rem 0.5rem;
+
+  /* border: 1px solid #939daf; */
+  text-align: center;
+}
+.userdetails {
+  color: #fff;
+  background-color: #674ce5;
+  padding: 0.5rem;
+}
+.resulthead {
+  color: #080b11;
+}
+.resultop {
+  color: #939daf;
+}
+@media (max-width: 600px) {
+  .header > h3 {
     /* margin-top: 2rem; */
-    font-size: 1.6rem;
-    color:"#080B11";
+    font-size: 1rem;
+    color: "#080B11";
     margin-top: 3rem;
-    /* text-align: center; */
   }
-  .header > p{
-    font-size: 0.9rem;
-    margin-top: -0.7rem;
-    color:#939DAF;
-    /* text-align: center; */
+  .header > p {
+    font-size: 0.7rem;
+    margin-top: -0.4rem;
+    color: #939daf;
   }
-  
-  
-  .form {
-    margin-top: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.1rem;
-   
-  }
-  
-  .form-group {
-    max-width: 320px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    align-items: flex-start;
-    /* border:1px solid yellow; */
-  }
-  
-  .form-group .label {
-    font-size: 0.9rem;
-    font-weight: 400;
-    color:"#364259"
-    
-  }
-  
-  .form-group input {
-    width: 92%;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    outline: none;
-    /* border:1px solid red; */
-  }
-  
-  .footer {
-    max-width: 320px;
-    margin: 0 auto;
-    margin-top: 2rem;
-    margin-bottom: 6.5rem;
-  }
-  
-  .footer .btn {
-    width: 100%;
-    padding: 0.85rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    outline: none;
-    cursor: pointer;
-    background-color: #674CE5;
-    color: #fff;
-  }
-
-  .opdata{
-    max-width:400px;
-    margin: auto;
-    border:1px solid red;
-    /* margin-top: 1rem; */
-    padding:1rem 0.5rem;
-
-    border: 1px solid #939DAF;
-    text-align: center;
-  }
-  .userdetails{
-    color:#fff;
-    background-color:#674CE5 ;
-    padding: 0.5rem;
-   
-  }
-  .resulthead{
-    color:#080B11;
-  }
-  .resultop{
-    color:#939DAF
-  }
-  @media (max-width: 600px) {
-    .header > h3{
-      /* margin-top: 2rem; */
-      font-size: 1rem;
-      color:"#080B11";
-      margin-top: 3rem;
-    }
-    .header > p{
-      font-size: 0.7rem;
-      margin-top: -0.4rem;
-      color:#939DAF;
-    }
-  
-  }
+}

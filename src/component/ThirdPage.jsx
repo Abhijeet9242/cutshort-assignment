@@ -1,38 +1,33 @@
 import React from "react";
 import "./Common.css";
 import StepperBar from "./StepperBar";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { RiTeamFill } from "react-icons/ri";
 import { BsFillPersonFill } from "react-icons/bs";
 import "./ThirdPage.css";
-import {useState} from "react"
-
-
+import { useState } from "react";
 
 const ThirdPage = () => {
-
+  const navigate = useNavigate();
   const [marked, setMarked] = useState(true);
-    const handleMark = () => {
+  const handleMark = () => {
     setMarked(!marked);
   };
 
-  const navigate = useNavigate()
-
   const goTo = () => {
-    navigate("/forth")
-  }
+    navigate("/forth");
+  };
 
-  
-    return (
-        <div className="container-main">
-    <div className="logo"></div>
-   <StepperBar step={{num:"2"}}/>
-    <div className="header" >
-      <h3 >How are you planning to use Eden?</h3>
-      <p >we'll streamline your setup experience accordingly.</p>
-    </div>
+  return (
+    <div className="container-main">
+      <div className="logo"></div>
+      <StepperBar step={{ num: "2" }} />
+      <div className="header">
+        <h3>How are you planning to use Eden?</h3>
+        <p>we'll streamline your setup experience accordingly.</p>
+      </div>
 
-    <div className="form">
+      <div className="form">
         <div className="form-group select-option">
           <div
             className={marked ? "option marked" : "option"}
@@ -62,13 +57,13 @@ const ThirdPage = () => {
         </div>
       </div>
 
-
-    <div className="footer">
-      <button className="btn" onClick={goTo}>Create Workspace</button>
+      <div className="footer">
+        <button className="btn" onClick={goTo}>
+          Create Workspace
+        </button>
+      </div>
     </div>
-  </div>
+  );
+};
 
-    )
-}
-
-export default ThirdPage
+export default ThirdPage;
