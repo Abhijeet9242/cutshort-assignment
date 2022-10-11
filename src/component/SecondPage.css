@@ -1,0 +1,20 @@
+.domain-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .fix-domain {
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    padding: 0.70rem;
+    background-color: #f8f9fc;
+    color: #a19f9f;
+    font-size: 0.9rem;
+  }
+  
+  #displayName {
+    border-radius: 0 5px 5px 0;
+  }
+  

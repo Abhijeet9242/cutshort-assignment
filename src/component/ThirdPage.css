@@ -1,0 +1,53 @@
+.select-option {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.8rem;
+    animation: fadeIn 0.5s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  .option {
+    width: 50%;
+    height: 125px;
+    padding: 0.95rem 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    background-color: #f8f9fc;
+    color: #918d8d;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .option-H {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0.9rem 0 0.5rem 0;
+    color: #333232
+  }
+  
+  .option-D {
+    text-align: left;
+    color:#939DAF;
+    font-size: 0.8rem;
+  }
+  
+  .option-icon{
+    color: #333232;
+  }
+  
+  .marked {
+    border: 1px solid #685be5;
+  }
+  
+  .marked .option-icon {
+    color: #685be5 !important;
+  }
+  
+  
+  

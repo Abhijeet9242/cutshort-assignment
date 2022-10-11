@@ -1,0 +1,20 @@
+.stepper {
+    max-width: 330px;
+    margin: 0 auto;
+    /* background-color: red; */
+  }
+  .logo {
+    margin-top: 50px;
+   
+  }
+.logo img{
+    width:125px;
+}
+
+/* .stepper div div div:nth-child(3) div{
+  background-color: red !important;
+ } */
+   /* 
+   .stepper div div div:nth-child(4) div{
+    background-color: red !important;
+   } */
