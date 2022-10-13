@@ -1,12 +1,11 @@
 import React from "react";
-import "./Common.css";
+import "../style/Common.css";
+import "../style/ForthPage.css";
 import StepperBar from "./StepperBar";
-import "./ForthPage.css";
 import { useNavigate } from "react-router-dom";
 
 const ForthPage = () => {
   const navigate = useNavigate();
-
   const goTo = () => {
     navigate("/resultData");
   };

@@ -1,9 +1,10 @@
-import { useDispatch, useSelector } from "react-redux";
+import "../style/Common.css";
+import {useSelector } from "react-redux";
 
 const OutputResult = () => {
   const outputResult = useSelector((state) => state);
-  // console.log(outputResult)
-
+  console.log(outputResult)
+  
   return (
     <div className="opdata">
       <h1 className="userdetails">User Details</h1>

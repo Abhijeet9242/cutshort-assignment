@@ -71,10 +71,7 @@
 .opdata {
   max-width: 400px;
   margin: auto;
-
   padding: 1rem 0.5rem;
-
-  /* border: 1px solid #939daf; */
   text-align: center;
 }
 .userdetails {

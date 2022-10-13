@@ -1,24 +1,18 @@
 import React from "react";
-import "./Common.css";
+import "../style/Common.css";
 import StepperBar from "./StepperBar";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 import { addFirstname, addDisplayname } from "../redux/action";
 import { useDispatch, useSelector } from "react-redux";
 
 const FirstPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  const [fname, setFname] = useState("");
-  const [disname, setDisname] = useState("");
+  const { firstName, displayName } = useSelector((state) => state);
 
   const goTo = () => {
-    // console.log(fname,disname)
-    if (fname && disname) {
-      dispatch(addFirstname(fname));
-      dispatch(addDisplayname(disname));
-      navigate("/second");
+    if ((firstName, displayName)) {
+     navigate("/second");
     }
   };
 
@@ -38,7 +32,7 @@ const FirstPage = () => {
             type="text"
             id="name"
             placeholder="Steve Jobs"
-            onChange={(e) => setFname(e.target.value)}
+            onChange={(e) => dispatch(addFirstname(e.target.value))}
           />
         </div>
         <div className="form-group">
@@ -47,7 +41,7 @@ const FirstPage = () => {
             type="displayName"
             id="text"
             placeholder="Steve"
-            onChange={(e) => setDisname(e.target.value)}
+            onChange={(e) => dispatch(addDisplayname(e.target.value))}
           />
         </div>
       </div>

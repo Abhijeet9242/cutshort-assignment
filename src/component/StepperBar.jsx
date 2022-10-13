@@ -1,14 +1,16 @@
 import React from "react";
+import "../style/StepperBar.css";
+import iconlogoimg from "../assets/iconlogo.png";
 import Stepper from "react-stepper-horizontal";
-import "./StepperBar.css";
-import mying from "../assets/iconlogo.png";
+
+
 
 const StepperBar = (props) => {
-  console.log(props);
+
   return (
     <>
       <div className="logo">
-        <img src={mying} className="logoimg" />
+        <img src={iconlogoimg} className="logoimg" alt=""/>
       </div>
       <div className="stepper">
         <Stepper

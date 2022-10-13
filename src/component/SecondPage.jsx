@@ -1,22 +1,18 @@
 import React from "react";
-import "./Common.css";
+import "../style/Common.css";
+import "../style/SecondPage.css";
 import StepperBar from "./StepperBar";
 import { useNavigate } from "react-router-dom";
-import "./SecondPage.css";
-import { useState } from "react";
 import { addWorkspacename, addWorkspaceurl } from "../redux/action";
 import { useDispatch, useSelector } from "react-redux";
 
 const SecondPage = () => {
-  const [workspacename, setWorkspacename] = useState("");
-  const [url, setURL] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const {workspaceName} = useSelector((state) => state);
 
   const goTo = () => {
-    if (workspacename && url) {
-      dispatch(addWorkspacename(workspacename));
-      dispatch(addWorkspaceurl(url));
+   if(workspaceName) {
       navigate("/third");
     }
   };
@@ -37,7 +33,7 @@ const SecondPage = () => {
             type="text"
             id="name"
             placeholder="Eden"
-            onChange={(e) => setWorkspacename(e.target.value)}
+            onChange={(e) =>dispatch(addWorkspacename(e.target.value))}
           />
         </div>
         <div className="form-group">
@@ -51,7 +47,7 @@ const SecondPage = () => {
               type="text"
               id="displayName"
               placeholder="Example"
-              onChange={(e) => setURL(e.target.value)}
+              onChange={(e) =>dispatch(addWorkspaceurl(e.target.value))}
             />
           </div>
         </div>

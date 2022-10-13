@@ -1,10 +1,11 @@
 import React from "react";
-import "./Common.css";
+import "../style/Common.css";
+import "../style/ThirdPage.css";
 import StepperBar from "./StepperBar";
 import { useNavigate } from "react-router-dom";
 import { RiTeamFill } from "react-icons/ri";
 import { BsFillPersonFill } from "react-icons/bs";
-import "./ThirdPage.css";
+
 import { useState } from "react";
 
 const ThirdPage = () => {
